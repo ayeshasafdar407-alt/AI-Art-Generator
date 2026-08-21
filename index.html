@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Art Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <h1>🎨 AI Art Generator</h1>
+
+        <p>Create amazing artwork using AI</p>
+
+
+        <!-- Login / Register -->
+
+        <div id="accountArea">
+
+            <button id="loginBtn">
+                Login
+            </button>
+
+            <button id="registerBtn">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- Logged-in User -->
+
+        <div id="userArea" style="display: none;">
+
+            <span id="welcomeUser"></span>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             REGISTER
+        ========================== -->
+
+        <section
+            id="registerSection"
+            class="account-section"
+            style="display: none;"
+        >
+
+            <h2>Create Account</h2>
+
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Your name"
+            >
+
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Password (minimum 6 characters)"
+            >
+
+            <button id="createAccountBtn">
+                Create Account
+            </button>
+
+            <p id="registerMessage"></p>
+
+        </section>
+
+
+
+        <!-- =========================
+             LOGIN
+        ========================== -->
+
+        <section
+            id="loginSection"
+            class="account-section"
+            style="display: none;"
+        >
+
+            <h2>Login</h2>
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+            >
+
+            <button id="loginSubmitBtn">
+                Login
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </section>
+
+
+
+        <!-- =========================
+             PREMIUM SECTION
+        ========================== -->
+
+        <section
+            id="premiumSection"
+            class="premium-section"
+        >
+
+            <h2>⭐ AI Art Generator Premium</h2>
+
+            <p>
+                Unlock AI image generation with Premium membership.
+            </p>
+
+
+            <h3>Premium Features</h3>
+
+            <ul>
+
+                <li>
+                    🎨 AI Artwork Generation
+                </li>
+
+                <li>
+                    ✨ Create amazing AI artwork
+                </li>
+
+                <li>
+                    🚀 Premium access
+                </li>
+
+            </ul>
+
+
+            <div class="premium-price">
+
+                <h2>
+                    Premium Membership
+                </h2>
+
+                <p>
+                    Get access to AI image generation.
+                </p>
+
+            </div>
+
+
+            <button id="purchaseBtn">
+                💳 Purchase Premium
+            </button>
+
+
+            <p id="premiumMessage"></p>
+
+        </section>
+
+
+
+        <!-- =========================
+             AI ART GENERATOR
+        ========================== -->
+
+        <section class="generator">
+
+            <h2>
+                Generate Your Artwork
+            </h2>
+
+
+            <textarea
+                id="prompt"
+                placeholder="Describe your image... e.g. A beautiful sunset over mountains"
+            ></textarea>
+
+
+            <button id="generateBtn">
+                Generate Art
+            </button>
+
+
+            <div id="result">
+
+                <p>
+                    Your generated artwork will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            AI Art Generator © 2026
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
